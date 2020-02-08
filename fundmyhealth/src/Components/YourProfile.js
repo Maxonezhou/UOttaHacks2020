@@ -1,8 +1,10 @@
 import React from "react";
-import SideMenu from './SideMenu';
+import SideMenuYourProfile from './SideMenuYourProfile';
 
 export default function YourProfile(props) {
     return (
-        <SideMenu></SideMenu>
+        <div>
+            <SideMenuYourProfile></SideMenuYourProfile>
+        </div>
     );
   }

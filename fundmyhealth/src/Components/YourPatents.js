@@ -1,8 +1,10 @@
 import React from "react";
-import SideMenu from './SideMenu';
+import SideMenuYourPatents from './SideMenuYourPatents';
 
 export default function YourPatents(props) {
     return (
-        <SideMenu></SideMenu>
+        <div>
+            <SideMenuYourPatents></SideMenuYourPatents>
+        </div>
     );
   }

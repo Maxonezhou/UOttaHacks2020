@@ -1,8 +1,8 @@
 import React from "react";
-import SideMenu from './SideMenu';
+import SideMenuAllPatents from './SideMenuAllPatents';
 
 export default function AllPatents(props) {
     return (
-        <SideMenu></SideMenu>
+        <SideMenuAllPatents></SideMenuAllPatents>
     );
   }
