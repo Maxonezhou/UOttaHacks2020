@@ -129,22 +129,23 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {[<a href='/'>Your Profile</a>, <a href='/yourpatents'>Your Patents</a>, <a href='/allpatents'>All Patents</a>].map((text, index) => (
+          {[<a href='/yourprofile'>Your Profile</a>, <a href='/yourpatents'>Your Patents</a>, <a href='/allpatents'>All Patents</a>].map((text, index) => (
             <ListItem button key={text}>
               {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
               <ListItemText primary={text} />
             </ListItem>
           ))}
         </List>
-        {/* <Divider />
+        
+        <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          {[<a href='/'>Log Out</a>].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+              {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
               <ListItemText primary={text} />
             </ListItem>
           ))}
-        </List> */}
+        </List>
       </Drawer>
       <main
         className={clsx(classes.content, {

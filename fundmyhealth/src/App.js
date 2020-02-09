@@ -9,6 +9,8 @@ import YourPatentsRegionMarket from './Components/YourPatentsRegionMarket';
 import YourPatentsRegionMarketDrug from './Components/YourPatentsRegionMarketDrug';
 import YourPatentsSingleSearch from './Components/YourPatentsSingleSearch';
 
+import SignIn from './Components/SignIn';
+
 import messaging from "./Messaging";
 import Paho from "paho-mqtt";
 
@@ -34,7 +36,9 @@ class App extends React.Component {
 
         <BrowserRouter>
          <Switch>
-           <Route exact path="/" component={YourProfile}>
+           <Route exact path="/" component={SignIn}>
+           </Route>
+		   <Route exact path="/yourprofile" component={YourProfile}>
            </Route>
            <Route exact path="/yourpatents" component={YourPatents}>
            </Route>

@@ -74,5 +74,5 @@ let myInterval2 = setInterval(() => {
     // app.publishMessage('/drugs', 'Ranexa');
     // app.publishMessage('/drugs', 'Vimovo');
     // app.publishMessage('/drugs', 'VitaminC');
-    app.publishMessage('/drugs', 'Ativan Biaxin Biotin Flomax Kadian Prozac Robaxin Reglan Ranexa Vimovo VitaminC');
+    app.publishMessage('/drugs', 'Ativan Biaxin Biotin Flomax Kadian Prozac Robaxin Reglan Ranexa Vimovo VitaminC Insulin');
 }, 500);
