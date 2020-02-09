@@ -20,6 +20,7 @@ class App {
 
     messageHandler(topicString, messageString){
         console.log("New message on topic:", topicString, "::", messageString);
+        var start = false;
         // Here is where you add code to handle the message
         switch (topicString) {
             case 'SomeTopic': {
@@ -27,10 +28,23 @@ class App {
                 console.log("Message as object", message);
                 break;
             }
+            case '/start': {
+                console.log('Host Has requested connection');
+                start = true;
+                break;
+            }
+            case '/pharmaceutical/USA/NYSE/#': {
+                console.log(messageString);
+                break;
+            }
             default: {
                 console.warn("Unexpected topic", topicString);
                 break;
             }
+        }
+        if (start)
+        {
+            return true;
         }
     }
 
