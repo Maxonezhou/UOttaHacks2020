@@ -63,15 +63,16 @@ app.subscribeToTopic('/start');
 
 //app.messageHandler('/start', 'Startup');
 let myInterval2 = setInterval(() => {
-    app.publishMessage('/drugs', 'Ativan');
-    app.publishMessage('/drugs', 'Biaxin');
-    app.publishMessage('/drugs', 'Biotin');
-    app.publishMessage('/drugs', 'Flomax');
-    app.publishMessage('/drugs', 'Kadian');
-    app.publishMessage('/drugs', 'Prozac');
-    app.publishMessage('/drugs', 'Robaxin');
-    app.publishMessage('/drugs', 'Reglan');
-    app.publishMessage('/drugs', 'Ranexa');
-    app.publishMessage('/drugs', 'Vimovo');
-    app.publishMessage('/drugs', 'VitaminC');
+    // app.publishMessage('/drugs', 'Ativan');
+    // app.publishMessage('/drugs', 'Biaxin');
+    // app.publishMessage('/drugs', 'Biotin');
+    // app.publishMessage('/drugs', 'Flomax');
+    // app.publishMessage('/drugs', 'Kadian');
+    // app.publishMessage('/drugs', 'Prozac');
+    // app.publishMessage('/drugs', 'Robaxin');
+    // app.publishMessage('/drugs', 'Reglan');
+    // app.publishMessage('/drugs', 'Ranexa');
+    // app.publishMessage('/drugs', 'Vimovo');
+    // app.publishMessage('/drugs', 'VitaminC');
+    app.publishMessage('/drugs', 'Ativan Biaxin Biotin Flomax Kadian Prozac Robaxin Reglan Ranexa Vimovo VitaminC');
 }, 500);
