@@ -53,11 +53,11 @@ class App extends React.Component {
               <button onClick={() => this.handleConnectClick()}>{connected ? 'Disconnect' : 'Connect'}</button>
               {sendButton}
             </div> */}
-            <ol>
+            {/* <ol>
               {this.state.messages.map((message, index) => {
                 return <li key={index}>{message}</li>
               })}
-            </ol>
+            </ol> */}
           </div>
 
       </div>

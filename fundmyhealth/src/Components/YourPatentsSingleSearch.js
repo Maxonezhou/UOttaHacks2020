@@ -1,6 +1,8 @@
 import React from "react";
-import SideMenuAllPatents from './SideMenuAllPatents';
+import SideMenuYourPatents from './SideMenuYourPatents';
 import Apex from './ApexCharts';
+import ContainedButtons from './Buttons';
+
 
 import messaging from "../Messaging";
 import Paho from "paho-mqtt";
@@ -20,7 +22,7 @@ class App extends React.Component {
 
         messaging.connectWithPromise().then(response => {
             console.log("Succesfully connected to Solace Cloud.", response);
-            messaging.subscribe("/#");
+            messaging.subscribe("/pharmaceutical/+/+/Robaxin");
             this.setState({
                 connected: true,
                 messages: this.state.messages
@@ -41,7 +43,9 @@ class App extends React.Component {
 		return (
 
       <div>
-        <SideMenuAllPatents></SideMenuAllPatents>
+        <SideMenuYourPatents></SideMenuYourPatents>
+        <ContainedButtons></ContainedButtons>
+        <h4>Current Search: Region: All, Market: All, Medicine: Prozac</h4>
         <Apex/>
 
         <div className="App">
@@ -49,11 +53,11 @@ class App extends React.Component {
               <button onClick={() => this.handleConnectClick()}>{connected ? 'Disconnect' : 'Connect'}</button>
               {sendButton}
             </div> */}
-            {/* <ol>
+            <ol>
               {this.state.messages.map((message, index) => {
                 return <li key={index}>{message}</li>
               })}
-            </ol> */}
+            </ol>
           </div>
 
       </div>

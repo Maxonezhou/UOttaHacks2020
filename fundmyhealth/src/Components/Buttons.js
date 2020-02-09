@@ -23,6 +23,10 @@ export default function ContainedButtons() {
         Vitamin C
       </Button>
 
+      <Button variant="contained" color="secondary" onClick={()=> window.location="/yourpatentsSingleSearch"}>
+        Prozac
+      </Button>
+
       <Button variant="contained" onClick={()=> window.location="/yourpatents"}>Clear Search</Button>
 
     </div>
