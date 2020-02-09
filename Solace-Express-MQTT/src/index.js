@@ -50,7 +50,6 @@ initializeApplication();
 // initialize the express server
 initializeExpress();
 
-app.subscribeToTopic('/pharmaceutical/USA/NYSE/#');
 app.subscribeToTopic('/start');
 
 var started = false;
@@ -64,6 +63,17 @@ let myInterval1 = setInterval(() => {
 
 //app.messageHandler('/start', 'Startup');
 let myInterval2 = setInterval(() => {
+    app.publishMessage('/drugs', 'Ativan');
+    app.publishMessage('/drugs', 'Biaxin');
+    app.publishMessage('/drugs', 'Biotin');
+    app.publishMessage('/drugs', 'Flomax');
+    app.publishMessage('/drugs', 'Kadian');
+    app.publishMessage('/drugs', 'Prozac');
+    app.publishMessage('/drugs', 'Robaxin');
+    app.publishMessage('/drugs', 'Reglan');
+    app.publishMessage('/drugs', 'Ranexa');
+    app.publishMessage('/drugs', 'Vimovo');
+    app.publishMessage('/drugs', 'VitaminC');
     // New York Stock Exchange
     app.publishMessage('/pharmaceutical/USA/NYSE/Ativan', (Math.floor((Math.random() * 10) + 100).toString())); // Ativan
     app.publishMessage('/pharmaceutical/USA/NYSE/Biaxin', (Math.floor((Math.random() * 10) + 90).toString())); // Biaxin
