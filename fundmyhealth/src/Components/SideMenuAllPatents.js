@@ -136,15 +136,7 @@ export default function PersistentDrawerLeft() {
             </ListItem>
           ))}
         </List>
-        {/* <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List> */}
+
       </Drawer>
       <main
         className={clsx(classes.content, {
@@ -153,7 +145,7 @@ export default function PersistentDrawerLeft() {
       >
         <div className={classes.drawerHeader} />
         <h1>
-            All Patents
+            Market Place
         </h1>
 
         <p>Here is a list of all the patents on the market. You can click to purchase any of them!</p>

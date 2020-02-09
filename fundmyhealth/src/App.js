@@ -40,7 +40,7 @@ class App extends React.Component {
          </Switch>
         </BrowserRouter>
 
-          <div className="App">
+          {/* <div className="App">
             <div class="buttons">
               <button onClick={() => this.handleConnectClick()}>{connected ? 'Disconnect' : 'Connect'}</button>
               {sendButton}
@@ -50,7 +50,7 @@ class App extends React.Component {
                 return <li key={index}>{message}</li>
               })}
             </ol>
-          </div>
+          </div> */}
       </div>
 		  );
 	}

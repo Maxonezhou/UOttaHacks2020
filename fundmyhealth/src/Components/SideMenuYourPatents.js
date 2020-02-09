@@ -160,14 +160,15 @@ export default function PersistentDrawerLeft() {
 
         <Divider />
 
-        <h2>
+        
+        {/* <h2>
           Item 1 <br/>
         </h2>
         <p>Description 1</p>
         <h2>
           Item 2 <br/>
         </h2>
-        <p>Description 2</p>
+        <p>Description 2</p> */}
         
       </main>
     </div>
