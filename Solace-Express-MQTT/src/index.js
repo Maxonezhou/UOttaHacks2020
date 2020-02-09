@@ -63,45 +63,44 @@ let myInterval1 = setInterval(() => {
 }, 100);
 
 //app.messageHandler('/start', 'Startup');
-
 let myInterval2 = setInterval(() => {
     // New York Stock Exchange
-    app.publishMessage('/pharmaceutical/USA/NYSE/Ativan', ); // Ativan
-    app.publishMessage('/pharmaceutical/USA/NYSE/Biaxin', ); // Biaxin
-    app.publishMessage('/pharmaceutical/USA/NYSE/Biotin', ); // Biotin
-    app.publishMessage('/pharmaceutical/USA/NYSE/Flomax', ); // Flomax
-    app.publishMessage('/pharmaceutical/USA/NYSE/Kadian', ); // Kadian
-    app.publishMessage('/pharmaceutical/USA/NYSE/Prozac', ); // Prozac
-    app.publishMessage('/pharmaceutical/USA/NYSE/Robaxin', ); // Robaxin
-    app.publishMessage('/pharmaceutical/USA/NYSE/Reglan', ); // Reglan
-    app.publishMessage('/pharmaceutical/USA/NYSE/Ranexa', ); // Ranexa
-    app.publishMessage('/pharmaceutical/USA/NYSE/Vimovo', ); // Vimovo
-    app.publishMessage('/pharmaceutical/USA/NYSE/VitaminC', ); // VitaminC
+    app.publishMessage('/pharmaceutical/USA/NYSE/Ativan', (Math.floor((Math.random() * 10) + 100).toString())); // Ativan
+    app.publishMessage('/pharmaceutical/USA/NYSE/Biaxin', (Math.floor((Math.random() * 10) + 90).toString())); // Biaxin
+    app.publishMessage('/pharmaceutical/USA/NYSE/Biotin', (Math.floor((Math.random() * 10) + 80).toString())); // Biotin
+    app.publishMessage('/pharmaceutical/USA/NYSE/Flomax', (Math.floor((Math.random() * 10) + 70).toString())); // Flomax
+    app.publishMessage('/pharmaceutical/USA/NYSE/Kadian', (Math.floor((Math.random() * 10) + 110).toString())); // Kadian
+    app.publishMessage('/pharmaceutical/USA/NYSE/Prozac', (Math.floor((Math.random() * 10) + 60).toString())); // Prozac
+    app.publishMessage('/pharmaceutical/USA/NYSE/Robaxin', (Math.floor((Math.random() * 10) + 50).toString())); // Robaxin
+    app.publishMessage('/pharmaceutical/USA/NYSE/Reglan', (Math.floor((Math.random() * 10) + 90).toString())); // Reglan
+    app.publishMessage('/pharmaceutical/USA/NYSE/Ranexa', (Math.floor((Math.random() * 10) + 100).toString())); // Ranexa
+    app.publishMessage('/pharmaceutical/USA/NYSE/Vimovo', (Math.floor((Math.random() * 10) + 10).toString())); // Vimovo
+    app.publishMessage('/pharmaceutical/USA/NYSE/VitaminC', (Math.floor((Math.random() * 10) + 200).toString())); // VitaminC
 
-    // National Association of Securities Dealers Automated Quotation System
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/ATI', ); // Ativan
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/BIX', ); // Biaxin
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/BIO', ); // Biotin
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/FMX', ); // Flomax
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/KDN', ); // Kadian
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/PRZ', ); // Prozac
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/Robaxin', ); // Robaxin
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/Reglan', ); // Reglan
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/Ranexa', ); // Ranexa
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/Vimovo', ); // Vimovo
-    app.publishMessage('/pharmaceutical/USA/Nasdaq/VitaminC', ); // VitaminC
+    // // National Association of Securities Dealers Automated Quotation System
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/ATI', (Math.floor((Math.random() * 10) + 95).toString())); // Ativan
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/BIX', (Math.floor((Math.random() * 10) + 90).toString())); // Biaxin
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/BIO', (Math.floor((Math.random() * 10) + 90).toString())); // Biotin
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/FMX', (Math.floor((Math.random() * 10) + 70).toString())); // Flomax
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/KDN', (Math.floor((Math.random() * 10) + 120).toString())); // Kadian
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/PRZ', (Math.floor((Math.random() * 10) + 60).toString())); // Prozac
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/Robaxin', (Math.floor((Math.random() * 10) + 50).toString())); // Robaxin
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/Reglan', (Math.floor((Math.random() * 10) + 90).toString())); // Reglan
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/Ranexa', (Math.floor((Math.random() * 10) + 100).toString())); // Ranexa
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/Vimovo', (Math.floor((Math.random() * 10) + 10).toString())); // Vimovo
+    app.publishMessage('/pharmaceutical/USA/Nasdaq/VitaminC', (Math.floor((Math.random() * 10) + 200).toString())); // VitaminC
 
     // American Stock Exchange
-    app.publishMessage('/pharmaceutical/USA/AMEX/ATI', ); // Ativan
-    app.publishMessage('/pharmaceutical/USA/AMEX/BIX', ); // Biaxin
-    app.publishMessage('/pharmaceutical/USA/AMEX/BIO', ); // Biotin
-    app.publishMessage('/pharmaceutical/USA/AMEX/FMX', ); // Flomax
-    app.publishMessage('/pharmaceutical/USA/AMEX/KDN', ); // Kadian
-    app.publishMessage('/pharmaceutical/USA/AMEX/PRZ', ); // Prozac
-    app.publishMessage('/pharmaceutical/USA/AMEX/Robaxin', ); // Robaxin
-    app.publishMessage('/pharmaceutical/USA/AMEX/Reglan', ); // Reglan
-    app.publishMessage('/pharmaceutical/USA/AMEX/Ranexa', ); // Ranexa
-    app.publishMessage('/pharmaceutical/USA/AMEX/Vimovo', ); // Vimovo
-    app.publishMessage('/pharmaceutical/USA/AMEX/VitaminC', ); // VitaminC
+    app.publishMessage('/pharmaceutical/USA/AMEX/ATI', (Math.floor((Math.random() * 10) + 96).toString())); // Ativan
+    app.publishMessage('/pharmaceutical/USA/AMEX/BIX', (Math.floor((Math.random() * 10) + 90).toString())); // Biaxin
+    app.publishMessage('/pharmaceutical/USA/AMEX/BIO', (Math.floor((Math.random() * 10) + 90).toString())); // Biotin
+    app.publishMessage('/pharmaceutical/USA/AMEX/FMX', (Math.floor((Math.random() * 10) + 76).toString())); // Flomax
+    app.publishMessage('/pharmaceutical/USA/AMEX/KDN', (Math.floor((Math.random() * 10) + 119).toString())); // Kadian
+    app.publishMessage('/pharmaceutical/USA/AMEX/PRZ', (Math.floor((Math.random() * 10) + 60).toString())); // Prozac
+    app.publishMessage('/pharmaceutical/USA/AMEX/Robaxin', (Math.floor((Math.random() * 10) + 50).toString())); // Robaxin
+    app.publishMessage('/pharmaceutical/USA/AMEX/Reglan', (Math.floor((Math.random() * 10) + 90).toString())); // Reglan
+    app.publishMessage('/pharmaceutical/USA/AMEX/Ranexa', (Math.floor((Math.random() * 10) + 100).toString())); // Ranexa
+    app.publishMessage('/pharmaceutical/USA/AMEX/Vimovo', (Math.floor((Math.random() * 10) + 10).toString())); // Vimovo
+    app.publishMessage('/pharmaceutical/USA/AMEX/VitaminC', (Math.floor((Math.random() * 10) + 190).toString())); // VitaminC
 
 }, 500);
