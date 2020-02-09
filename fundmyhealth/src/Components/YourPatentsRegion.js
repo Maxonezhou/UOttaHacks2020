@@ -1,6 +1,8 @@
 import React from "react";
-import SideMenuAllPatents from './SideMenuAllPatents';
-import Apex from './ApexCharts';
+import SideMenuYourPatents from './SideMenuYourPatents';
+import ApexRegion from './ApexChartsRegion';
+import ContainedButtons from './Buttons';
+
 
 import messaging from "../Messaging";
 import Paho from "paho-mqtt";
@@ -20,7 +22,7 @@ class App extends React.Component {
 
         messaging.connectWithPromise().then(response => {
             console.log("Succesfully connected to Solace Cloud.", response);
-            messaging.subscribe("/#");
+            messaging.subscribe("/test/#");
             this.setState({
                 connected: true,
                 messages: this.state.messages
@@ -41,8 +43,10 @@ class App extends React.Component {
 		return (
 
       <div>
-        <SideMenuAllPatents></SideMenuAllPatents>
-        <Apex/>
+        <SideMenuYourPatents></SideMenuYourPatents>
+        <ContainedButtons></ContainedButtons>
+        <h4>Current Filters: Region: USA</h4>
+        <ApexRegion/>
 
         <div className="App">
             {/* <div class="buttons">

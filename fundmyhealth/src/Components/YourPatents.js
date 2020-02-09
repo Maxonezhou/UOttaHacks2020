@@ -1,5 +1,8 @@
 import React from "react";
 import SideMenuYourPatents from './SideMenuYourPatents';
+import Apex from './ApexCharts';
+import ContainedButtons from './Buttons';
+
 
 import messaging from "../Messaging";
 import Paho from "paho-mqtt";
@@ -41,6 +44,10 @@ class App extends React.Component {
 
       <div>
         <SideMenuYourPatents></SideMenuYourPatents>
+        <ContainedButtons></ContainedButtons>
+        <h4>Current Filters: None</h4>
+        <h4>Showing all results</h4>
+        <Apex/>
 
         <div className="App">
             {/* <div class="buttons">

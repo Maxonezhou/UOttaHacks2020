@@ -8,7 +8,6 @@ export default function YourProfile(props) {
     return (
         <div>
             <SideMenuYourProfile></SideMenuYourProfile>
-            <Apex/>
         </div>
 
 
