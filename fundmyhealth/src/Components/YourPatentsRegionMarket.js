@@ -22,7 +22,7 @@ class App extends React.Component {
 
         messaging.connectWithPromise().then(response => {
             console.log("Succesfully connected to Solace Cloud.", response);
-            messaging.subscribe("/test/#");
+            messaging.subscribe("/pharmaceutical/USA/NYSE/#");
             this.setState({
                 connected: true,
                 messages: this.state.messages
@@ -45,7 +45,7 @@ class App extends React.Component {
       <div>
         <SideMenuYourPatents></SideMenuYourPatents>
         <ContainedButtons></ContainedButtons>
-        <h4>Current Search: Region: USA, Market: Pharmaseutical</h4>
+        <h4>Current Search: Region: USA, Market: NYSE</h4>
         <ApexRegionMarket/>
 
         <div className="App">

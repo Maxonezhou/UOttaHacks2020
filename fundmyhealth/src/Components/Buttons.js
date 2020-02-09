@@ -15,12 +15,12 @@ export default function ContainedButtons() {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" onClick={()=> window.location="/yourpatentsregion"}>Region</Button>
+      <Button variant="contained" onClick={()=> window.location="/yourpatentsregion"}>USA</Button>
       <Button variant="contained" color="primary" onClick={()=> window.location="/yourpatentsregionmarket"}>
-        Market
+        NYSE Market
       </Button>
       <Button variant="contained" color="secondary" onClick={()=> window.location="/yourpatentsregionmarketdrug"}>
-        Medicine
+        Vitamin C
       </Button>
 
       <Button variant="contained" onClick={()=> window.location="/yourpatents"}>Clear Search</Button>

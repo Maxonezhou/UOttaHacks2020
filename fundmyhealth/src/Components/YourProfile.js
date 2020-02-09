@@ -1,6 +1,8 @@
 import React from "react";
 import SideMenuYourProfile from './SideMenuYourProfile';
-import Apex from './ApexCharts';
+
+import video from '../Network.webm';
+
 
 
 export default function YourProfile(props) {
@@ -8,6 +10,7 @@ export default function YourProfile(props) {
     return (
         <div>
             <SideMenuYourProfile></SideMenuYourProfile>
+
         </div>
 
 

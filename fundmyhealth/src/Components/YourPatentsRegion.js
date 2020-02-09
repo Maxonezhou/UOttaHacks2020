@@ -22,7 +22,7 @@ class App extends React.Component {
 
         messaging.connectWithPromise().then(response => {
             console.log("Succesfully connected to Solace Cloud.", response);
-            messaging.subscribe("/test/#");
+            messaging.subscribe("/pharmaceutical/USA/#");
             this.setState({
                 connected: true,
                 messages: this.state.messages

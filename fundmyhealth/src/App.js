@@ -12,7 +12,6 @@ import messaging from "./Messaging";
 import Paho from "paho-mqtt";
 
 
-
 class App extends React.Component {
 
 	constructor(props) {
